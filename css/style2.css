@@ -1,0 +1,266 @@
+header {
+    display: flex;
+    font-family: 'Lobster', cursive;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #35b728;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    font-family: 'Lobster', cursive;
+    margin-top: 80px;
+}
+
+.dropbtn2 {
+    background-color: white;
+    color: #35b728;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    font-family: 'Lobster', cursive;
+    padding-left: 0;
+    padding-right: 16px;
+    /* margin-left: 386px; */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    width: 109px;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+.dropdown a.menu {
+    pointer-events: auto;
+    position: absolute;
+    text-decoration: none;
+    top: 17px;
+    right: 22px;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: top .35s cubic-bezier(.645,.045,.355,1) 0s;
+    transition: top .35s cubic-bezier(.645,.045,.355,1) 0s;
+    padding: 0 4px;
+    display: block;
+    background: transparent;
+}
+
+.dropdown a.menu .lines {
+    display: inline-block;
+    background: #e31b23;
+    border-radius: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 100%;
+    height: 3px;
+    position: relative;
+    top: 0;
+}
+
+.dropdown a.menu .lines:before {
+    top: 7px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    content: "";
+    transform-origin: 50% 50%
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    width: 119px;
+    margin-top: 30px;
+    margin-top: 110px;
+    margin-left: 10px;
+}
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 44px;
+    display: flex;
+    font-size: 30px;
+    /* margin-left: 29px; */
+    margin-top: 125px;
+    margin-left: 25px;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown2:hover .dropbtn2 {
+    background-color: white;
+}
+
+.top-logo {
+    height: 204px;
+    margin-left: 130px;
+}
+
+.nav ul a {
+    text-decoration: none;
+}
+
+.order a {
+    text-decoration: none;
+    color: #35b728;
+    font-size: 30px;
+    padding: 16px;
+    background-color: white;
+    border: none;
+    padding-left: 0;
+    margin-left: -17px;
+    margin-right: 10px;
+}
+
+.locations a {
+    text-decoration: none;
+    color: #35b728;
+    font-size: 30px;
+    padding: 16px;
+    background-color: white;
+    border: none;
+    padding-left: 0;
+    margin-left: 5px;
+}
+
+body, html {
+    height: 100%;
+    /* margin: 50px; */
+    /* font-family: 400 15px/1.8 "Lato", sans-serif; */
+    /* color: #777; */
+}
+
+.inspiration {
+    padding: 40px 0px;
+    /* height:540px;
+    background-color:rgb(255, 255, 255); */
+    font-size:36px;
+    color: white;
+    background: #35b728;
+    margin-top: -86px;
+    position: relative;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: nimbus-sans-condensed,sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+}
+
+.inspiration:before,
+.inspiration:after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 100%;
+    border-bottom: 15px solid #35b728;
+    border-left: 190px solid transparent;
+    border-right: 79px solid transparent;
+}
+
+h3 {
+    text-align: center;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border: solid 30px;
+    border-color: transparent transparent #35b728 transparent;
+    border-top-width: 0;
+    border-right-width: 0px;
+    border-left-width: 1503px;
+    border-bottom-width: 150px;
+    position: absolute;
+    margin-top: -236px;
+}
+
+.parallax, .parallax2 {
+    position: relative;
+    opacity: 0.65%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    background-image: url(https://wholefully.b-cdn.net/wp-content/uploads/2019/02/no-banana-smoothies.jpg);
+    min-height: 69.9%;
+    margin-bottom: 86px;
+}
+
+.parallax2 {
+    background-image: url(https://wholefully.b-cdn.net/wp-content/uploads/2019/02/no-banana-smoothies.jpg);
+    min-height: 75%;
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.bottom-bar {
+    background-color: black;
+    margin-top: -16px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 8px;
+    color: white;
+}
+
+.rights {
+    height: 40px;
+    margin-top: 16px;
+    padding-left: 0;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.copyright {
+    float: right;
+    text-decoration: none;
+    color: white;
+}
